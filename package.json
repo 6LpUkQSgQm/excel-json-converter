@@ -1,0 +1,54 @@
+{
+  "name": "excel-json-converter",
+  "version": "1.0.1",
+  "description": "A CLI to convert Excel file to JSON file",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "excel-json-converter": "./lib/index.js"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "start:windows": "nodemon --watch 'src/**/*.ts' --exec \"npx ts-node\" src/index.ts",
+    "build": "tsc -p .",
+    "local": "sudo npm i -g && excel-json-converter",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6LpUkQSgQm/excel-json-converter.git"
+  },
+  "keywords": [
+    "excel",
+    "converter",
+    "json",
+    "excel to json",
+    "convert excel",
+    "cli"
+  ],
+  "author": "6LpUkQSgQm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/6LpUkQSgQm/excel-json-converter/issues"
+  },
+  "homepage": "https://github.com/6LpUkQSgQm/excel-json-converter#readme",
+  "dependencies": {
+    "@types/jest": "^29.2.5",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.5.0",
+    "eslint": "^8.31.0",
+    "figlet": "^1.5.2",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "xlsx": "^0.18.5"
+  }
+}
