@@ -1,0 +1,4 @@
+_private/
+node_modules/
+npm-debug.log*
+coverage/

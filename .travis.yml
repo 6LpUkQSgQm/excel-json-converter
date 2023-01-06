@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "14"
+  - "16"
+install:
+  - yarn
+cache:
+  directories:
+    - node_modules
+  script:
+    - npm run test
