@@ -1,6 +1,6 @@
 {
   "name": "excel-json-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI to convert Excel file to JSON file",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
