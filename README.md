@@ -1,6 +1,6 @@
 # excel-json-converter
 
-[![Build Status](https://travis-ci.org/6LpUkQSgQm/excel-json-converter.svg?branch=main)](https://travis-ci.org/6LpUkQSgQm/excel-json-converter)
+[![Build Status](https://app.travis-ci.com/github/6LpUkQSgQm/excel-json-converter.svg?branch=main)](https://travis-ci.org/6LpUkQSgQm/excel-json-converter)
 
 Simple CLI to convert Excel file to Json format.
 
