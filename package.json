@@ -35,7 +35,7 @@
   "homepage": "https://github.com/6LpUkQSgQm/excel-json-converter#readme",
   "dependencies": {
     "@types/jest": "^29.2.6",
-    "@types/node": "^18.11.19",
+    "@types/node": "^18.14.5",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.2",
     "chalk": "^4.1.2",
