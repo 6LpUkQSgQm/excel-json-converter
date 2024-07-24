@@ -12,12 +12,6 @@ yarn add excel-json-converter
 
 # Usages
 
-With only one argument `input`, return Json data format:
-
-```bash
-excel-json-converter --input example.xlsx
-```
-
 With two arguments `input` and `output`, return data .json file:
 
 ```bash

@@ -27,22 +27,23 @@ console.log(
 // Configure the CLI program options
 program
   .name("excel-json-converter")
-  .version("1.1.0")
-  .description("A command-line tool to convert Excel files to JSON.")
-  .option("-f, --file <path>", "Path to the Excel file to convert")
+  .version("1.1.1")
+  .description("A command-line tool to convert Excel file to JSON file.")
+  .option("-i, --input <path>", "Path to the input Excel file")
   .option("-o, --output <path>", "Path to the output JSON file")
   .action((options) => {
     // Display the file paths if specified
-    if (options.file) console.log(`File to convert: ${options.file}`);
-    if (options.output) console.log(`Output file: ${options.output}`);
-
-    // Execute the conversion if a file is specified
-    if (options.file) {
-      excelToJson({ input: options.file, output: options.output });
-    } else {
-      console.error(chalk.red("Error: No file specified."));
+    if (!options.input || !options.output) {
+      console.error(
+        chalk.red("Error: Both input file and output file must be specified.")
+      );
       process.exit(1);
     }
+
+    // Execute the conversion if a file is specified
+    console.log(`File to convert: ${options.input}`);
+    console.log(`Output file: ${options.output}`);
+    excelToJson({ input: options.input, output: options.output });
   });
 
 // Display help if no commands are specified
