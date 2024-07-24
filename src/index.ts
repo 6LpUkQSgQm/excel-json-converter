@@ -27,7 +27,7 @@ console.log(
 // Configure the CLI program options
 program
   .name("excel-json-converter")
-  .version("1.1.1")
+  .version("1.1.2")
   .description("A command-line tool to convert Excel file to JSON file.")
   .option("-i, --input <path>", "Path to the input Excel file")
   .option("-o, --output <path>", "Path to the output JSON file")
