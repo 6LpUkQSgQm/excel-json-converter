@@ -2,10 +2,22 @@ language: node_js
 node_js:
   - "14"
   - "16"
+  - "node"
+
 install:
-  - yarn
+  - yarn install --frozen-lockfile
+
 cache:
   directories:
     - node_modules
-  script:
-    - npm run test
+    - .yarn/cache
+
+script:
+  - yarn run test
+
+notifications:
+  email:
+    recipients:
+      secure: dnfEAPikdF4tLUKk8cVZpv76i+5MOQfliLiLxEReRSdgnvPEQOx/1Pen1gKS6GDc90XhuqL8pZNOUY3E4KbM2zqfV7+vHitAwIYt0DoJzTtEZcSyB+juI94KMt00u+tTeyfEzaUUvAVLW9guqRE+QDGVT9w/9CP7lacm6wdPgtBs90jii9oAZBmyCFkFIylxTsNRMrsNXffgnejq1J9BdocC6UfuPwYcvVVMsOJTtR092OTeR09fha9gsBjUNFsHfPQI5O3GpWXa+Iy8KvDBHtO1kVnXcCE2D1saiHsMUi8w0jDEw8+c2skS+46p9Vy55QSMKXCw0rWH7j1w/bVH7ScrGhxHSoGKGwvlZb4UMMO7jgIfpRSpJ/8Snhxy8GMzhM6Wn6LuTtA6sElb9pmYu4iehU4cs8jG3jkgskfqZuUdNUFYHhagz8gLGliyQZFDOIIZZ1WNgLSXuyi1h5QFBpUioNbwWOncIMIkOlgNQrc2jauHbkCXwKnGsd8/UF3O/zEGi75m0VTiULOeVmJ36HDubEsCqPw3tV+QB8G5An5dsjpiMnorX0vYKrVAfNMoo6dIENXxwLruLi//JJsqC+vZDwQCKWI/BjffZWB9SpTIAGZqlT0MHE/Hq0A9nL7kBsaQ1iak3vKnL5QAhqcocdYAmtPwZtUHsrd6QAGXLC4=
+    on_success: change
+    on_failure: always

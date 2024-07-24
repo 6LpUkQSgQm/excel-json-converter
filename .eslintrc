@@ -1,19 +1,18 @@
 {
   "root": true,
+  "env": {
+    "node": true,
+    "es6": true
+  },
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "rules": {
-    "no-conditional-assignment": false,
-    "no-non-null-assertion": false,
-    "no-unnecessary-type-assertion": false,
-    "prefer-for-of": false,
-    "no-import-side-effect": false,
-    "ordered-imports": [
-      true,
-      {
-        "named-imports-order": "lowercase-last"
-      }
-    ]
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-conditional-assignment": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "off",
+    "prefer-for-of": "off",
+    "no-import-side-effect": "off"
   }
 }
